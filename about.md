@@ -5,11 +5,11 @@ permalink: /about/
 published: true
 ---
 
-Some information about you!
+Some information about me!
 
-### More Information
+### Me
 
-A place to include any other types of information that you'd like to include about yourself.
+My name is Tarun Gupta, I have 7 years of expereince in web and mobile devlopment. I have managed a lot of project from requirement state to make them production ready, with highest scalability and reliability.
 
 ### Contact me
 
