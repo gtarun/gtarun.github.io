@@ -1,9 +1,9 @@
 ---
 published: true
 layout: post
-title: 10-things-a-client-developer-need-to-understand-while-working-remotely 
+title: 10 things a client developer need to understand while working remotely 
 ---
-
+## 10 things a client developer need to understand while working remotely  
 The world is now turning away from ‘9 to 5’ spring and embracing a different work culture characterised by global staffing. Clients are hiring developers from around the world, and neither developers nor the clients are limited in their scope.
 
 Working remotely however can either be a hassle or a blessing. This depends on the level of interaction and engagement between the client and the development team. It is important to understand what your client needs.
