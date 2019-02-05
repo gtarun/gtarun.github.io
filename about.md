@@ -19,6 +19,7 @@ MySql
 Node.js
 Angualr.js
 MongoDb
+JavaScript
 
 
 Tarun enjoy travelling, tracking, football, chess and most love coding :)
