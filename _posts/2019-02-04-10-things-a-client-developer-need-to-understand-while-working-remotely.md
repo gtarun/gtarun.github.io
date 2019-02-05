@@ -49,3 +49,5 @@ When the product is ready for delivery, try to spare some time to get feedback f
 Keeping in mind the above points will help you develop a strong relationship with your client and create a healthy remote working environment.
 
 Are there any other points you consider while working with remote clients? Let us know in the comments section below.
+
+[Original Source](https://www.linkedin.com/pulse/20141113034206-205798158-10-things-a-client-developer-need-to-understand-while-working-remotely/)
