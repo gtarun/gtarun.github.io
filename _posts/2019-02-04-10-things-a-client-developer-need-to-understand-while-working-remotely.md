@@ -8,7 +8,7 @@ The world is now turning away from ‘9 to 5’ spring and embracing a different
 
 Working remotely however can either be a hassle or a blessing. This depends on the level of interaction and engagement between the client and the development team. It is important to understand what your client needs.
 
-![alt]([https://](media.licdn.com/dms/image/C4E12AQG3ONOiJNsLfQ/article-inline_image-shrink_1000_1488/0?e=1574294400&v=beta&t=VYXsLnb1EnrWbav57KToIqtuYENnuT5HGsxDs7jhdkQ))
+![alt](https://https://media.licdn.com/dms/image/C4E12AQG3ONOiJNsLfQ/article-inline_image-shrink_1000_1488/0?e=1574294400&v=beta&t=VYXsLnb1EnrWbav57KToIqtuYENnuT5HGsxDs7jhdkQ)
 
 
 Being mindful about a few key rules helps you in improving your professional relations, working efficiently and removing any existing barriers. One of our teammates lays down some golden rules of working remotely with a client. He tells us what a client actually expects when outsourcing a project to a remote team?
