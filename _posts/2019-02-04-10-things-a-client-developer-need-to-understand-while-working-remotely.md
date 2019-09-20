@@ -26,6 +26,7 @@ Being mindful about a few key rules helps you in improving your professional rel
 
 3. Better Thinking?
    Think about the product from the end user’s perspective. This helps you come up with better suggestions and gives your client insights into improving the product. An unorganized thought process only adds to the complications in the development process, so think wisely.
+   ![Asana](/images/asana.jpeg#center "Asana")
 
 4. Any Advice?
     Clients welcome any advice related to the product. This helps them finalize the right features and functionalities. It also helps in setting realistic expectations.
