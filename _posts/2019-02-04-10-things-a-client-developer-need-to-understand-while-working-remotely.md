@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-title: 10 things a client developer need to understand while working remotely 
+title: 10 things a client and developer need to understand while working remotely 
 ---
 
 
