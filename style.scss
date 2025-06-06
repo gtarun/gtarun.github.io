@@ -283,12 +283,44 @@ footer {
   padding: 20px 0;
   text-align: center;
 }
-.btn-download-cv{
-  background-color: Crimson;  
-  border-radius: 5px;
-  color: white;
-  padding: .5em;
+.btn-download-cv {
+  background-color: #d53369;
+  border-radius: 4px;
+  color: #fff;
+  padding: 0.6em 1.2em;
   text-decoration: none;
+  display: inline-block;
+}
+
+.btn-download-cv:hover {
+  background-color: #b82a5e;
+}
+
+.hero {
+  text-align: center;
+  padding: 4em 0;
+  background: linear-gradient(135deg, #d53369 0%, #daae51 100%);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 0.5em;
+}
+
+.hero p {
+  font-size: 24px;
+  margin-bottom: 1em;
+}
+
+.resume-iframe {
+  margin-top: 2em;
+}
+
+.resume-iframe iframe {
+  width: 100%;
+  height: 800px;
+  border: none;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
