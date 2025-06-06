@@ -292,6 +292,20 @@ footer {
   display: inline-block;
 }
 
+.btn-linkedin {
+  background-color: #0a66c2;
+  border-radius: 4px;
+  color: #fff;
+  padding: 0.6em 1.2em;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.btn-linkedin:hover {
+  background-color: #084b8a;
+}
+
 .btn-download-cv:hover {
   background-color: #b82a5e;
 }
@@ -301,6 +315,15 @@ footer {
   padding: 4em 0;
   background: linear-gradient(135deg, #d53369 0%, #daae51 100%);
   color: white;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero-cta {
+  margin-top: 1.5em;
 }
 
 .hero h1 {
@@ -315,6 +338,12 @@ footer {
 
 .resume-iframe {
   margin-top: 2em;
+}
+
+.about-home {
+  max-width: 700px;
+  margin: 3em auto;
+  text-align: center;
 }
 
 .resume-iframe iframe {
