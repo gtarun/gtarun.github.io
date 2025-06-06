@@ -15,8 +15,9 @@ $lightGray: #eee;
 $white: #fff;
 
 // Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$poppins: 'Poppins', sans-serif;
+$helvetica: $poppins;
+$helveticaNeue: $poppins;
 $georgia: Georgia, serif;
 
 // Mobile breakpoints
