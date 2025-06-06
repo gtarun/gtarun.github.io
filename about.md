@@ -17,12 +17,12 @@ Tarun, primarily skilled in the following technologies:
 PHP(Almost all CMS's and Frameworks)
 MySql
 Node.js
-Angualr.js
+Angular.js
 MongoDb
 JavaScript
 
 
-Tarun enjoy travelling, tracking, football, chess and most love coding :)
+Tarun enjoys travelling, trekking, football, chess, and coding the most.
 
 ### Contact me
 

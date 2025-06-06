@@ -157,20 +157,21 @@ img {
 .masthead {
   padding: 20px 0;
   border-bottom: 1px solid $lightGray;
+  display: flex;
+  align-items: center;
 
   @include mobile {
     text-align: center;
+    display: block;
   }
 }
 
 .site-avatar {
-  float: left;
   width: 70px;
   height: 70px;
   margin-right: 15px;
 
   @include mobile {
-    float: none;
     display: block;
     margin: 0 auto;
   }
@@ -182,12 +183,12 @@ img {
 }
 
 .site-info {
-  
+  margin-left: 15px;
 
   @include mobile {
-    float: none;
     display: block;
     margin: 0 auto;
+    margin-top: 10px;
   }
 }
 
@@ -212,13 +213,11 @@ img {
 }
 
 nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
+  margin-left: auto;
   font-family: $helveticaNeue;
   font-size: 18px;
 
   @include mobile {
-    float: none;
     margin-top: 9px;
     display: block;
     font-size: 16px;
@@ -292,6 +291,21 @@ footer {
   display: inline-block;
 }
 
+.btn-linkedin {
+  background-color: #0a66c2;
+  border-radius: 4px;
+  color: #fff;
+  padding: 0.6em 1.2em;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.btn-linkedin:hover {
+  background-color: #084b8a;
+
+}
+
 .btn-download-cv:hover {
   background-color: #b82a5e;
 }
@@ -302,6 +316,16 @@ footer {
   background: linear-gradient(135deg, #d53369 0%, #daae51 100%);
   color: white;
 }
+
+.hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero-cta {
+  margin-top: 1.5em;
+}
+
 
 .hero h1 {
   font-size: 48px;
@@ -316,6 +340,26 @@ footer {
 .resume-iframe {
   margin-top: 2em;
 }
+
+.about-home {
+  max-width: 700px;
+  margin: 3em auto;
+  text-align: center;
+}
+
+.experience,
+.education,
+.skills {
+  max-width: 700px;
+  margin: 3em auto;
+}
+
+.experience h2,
+.education h2,
+.skills h2 {
+  text-align: center;
+}
+
 
 .resume-iframe iframe {
   width: 100%;
