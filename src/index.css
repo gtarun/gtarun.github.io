@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  background: #fbfaf6;
+  color: #0f0f10;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+::selection {
+  background: #0f0f10;
+  color: #fbfaf6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@layer utilities {
+  .container-prose {
+    @apply mx-auto w-full max-w-[1080px] px-5 sm:px-8;
+  }
+  .hairline {
+    @apply border-b border-line;
+  }
+  .serif {
+    font-family: 'Instrument Serif', 'Times New Roman', serif;
+    font-weight: 400;
+  }
+  .serif-italic {
+    font-family: 'Instrument Serif', 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: 400;
+  }
+}
+
+canvas {
+  display: block;
+  outline: none;
+}
