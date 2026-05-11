@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>OG · Tarun Gupta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      html, body {
+        width: 1200px;
+        height: 630px;
+        font-family: 'Inter', system-ui, sans-serif;
+        background: #fbfaf6;
+        color: #0f0f10;
+        overflow: hidden;
+        -webkit-font-smoothing: antialiased;
+      }
+      .frame {
+        position: relative;
+        width: 1200px;
+        height: 630px;
+        background:
+          radial-gradient(900px 600px at 110% 110%, #ff572220 0%, transparent 60%),
+          radial-gradient(700px 500px at -10% -10%, #ffd6c270 0%, transparent 55%),
+          #fbfaf6;
+        padding: 64px 72px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 18px;
+        color: #5a5a5e;
+      }
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 14px;
+        background: rgba(15,15,16,0.05);
+        border: 1px solid rgba(15,15,16,0.1);
+        border-radius: 999px;
+        font-size: 14px;
+        color: #0f0f10;
+        font-weight: 500;
+      }
+      .dot {
+        width: 8px; height: 8px; border-radius: 999px;
+        background: #16a34a;
+      }
+      .url {
+        font-family: 'Inter', system-ui;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        color: #0f0f10;
+      }
+      .headline {
+        font-family: 'Instrument Serif', 'Times New Roman', serif;
+        font-weight: 400;
+        font-size: 96px;
+        line-height: 1.0;
+        letter-spacing: -0.035em;
+        color: #0f0f10;
+        max-width: 1000px;
+      }
+      .headline em {
+        font-style: italic;
+        color: #ff5722;
+      }
+      .bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+      .person {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+      }
+      .avatar {
+        width: 84px;
+        height: 84px;
+        border-radius: 999px;
+        background: #0f0f10;
+        overflow: hidden;
+        flex: none;
+        box-shadow: 0 6px 24px -8px rgba(0,0,0,0.25);
+      }
+      .avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+      .who {
+        line-height: 1.15;
+      }
+      .who .name {
+        font-family: 'Instrument Serif', serif;
+        font-size: 34px;
+        letter-spacing: -0.02em;
+      }
+      .who .role {
+        font-size: 16px;
+        color: #5a5a5e;
+        margin-top: 4px;
+      }
+      .products {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 4px;
+        font-size: 14px;
+        color: #5a5a5e;
+        text-align: right;
+      }
+      .products .kicker {
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        color: #ff5722;
+        font-weight: 600;
+      }
+      .products .list {
+        font-family: 'Inter', system-ui;
+        font-weight: 500;
+        color: #0f0f10;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="frame">
+      <div class="top">
+        <span class="badge"><span class="dot"></span>Open to senior leadership roles</span>
+        <span class="url">gtarun.github.io</span>
+      </div>
+
+      <h1 class="headline">
+        Building, leading &amp; scaling <em>SaaS&nbsp;products</em> that matter.
+      </h1>
+
+      <div class="bottom">
+        <div class="person">
+          <div class="avatar"><img src="/avatar.jpeg" alt="" /></div>
+          <div class="who">
+            <div class="name">Tarun Gupta</div>
+            <div class="role">Director of Product &amp; Engineering · 13 yrs</div>
+          </div>
+        </div>
+        <div class="products">
+          <span class="kicker">Shipping</span>
+          <span class="list">Outgrow · Coach LMS · ChatBotBuilder · Omniengage</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

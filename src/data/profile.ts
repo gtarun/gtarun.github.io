@@ -11,7 +11,7 @@ export const profile = {
   linkedin: 'https://www.linkedin.com/in/tarungupta003/',
   github: 'https://github.com/gtarun',
   twitter: 'https://twitter.com/tarungupta003',
-  whatsapp: 'https://wa.me/919999999999',
+  whatsapp: 'https://wa.me/919888981003',
 
   hero: {
     headline: 'Building, leading & scaling SaaS products that matter.',
