@@ -3,6 +3,8 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "homepage": "https://gtarun.github.io",
+  "repository": "github:gtarun/gtarun.github.io",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
