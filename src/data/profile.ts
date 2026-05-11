@@ -67,29 +67,34 @@ export const profile = {
 
   testimonials: [
     {
-      quote: 'Add a quote here — a peer, manager, or report describing how it is to work with you. Keep it 1–2 sentences. Specific outcomes hit harder than adjectives.',
-      name: 'Name Surname',
-      role: 'Title, Company',
+      quote:
+        "One of the smartest and most resourceful engineers I've worked with. The AI tools he's built within the organization are especially impressive — each has the potential to stand alone as a company in its own right.",
+      name: 'Mahak Garg',
+      role: 'MBA, Stanford GSB · Forbes Under 30 · Oct 2025',
     },
     {
-      quote: 'Add a second quote. The most credible ones come from people you reported to or who reported to you, not just collaborators.',
-      name: 'Name Surname',
-      role: 'Title, Company',
+      quote:
+        'Exceptional engineer and very empathetic team lead. Picks up things very fast and has an excellent ability to simplify complex tasks for the team and non-technical stakeholders alike.',
+      name: 'Neha Srivastava',
+      role: '13y+ Product Management · Managed Tarun · 2018',
     },
     {
-      quote: 'Third quote. Mix engineering peers with product/business stakeholders — it shows range.',
-      name: 'Name Surname',
-      role: 'Title, Company',
+      quote:
+        'A great manager — smart and analytic, fast and responsive, a real team player. He knows how to bring the best out of the team by motivating and sharing knowledge. One of the best managers I ever had.',
+      name: 'Muzaffar Kamal',
+      role: 'Tech Lead at mobileLIVE | Rogers · Reported to Tarun · 2020',
     },
     {
-      quote: 'Fourth quote. Numbers in quotes (“shipped X in Y weeks”) work better than vibes.',
-      name: 'Name Surname',
-      role: 'Title, Company',
+      quote:
+        'Few people have the opportunity to report to a manager who is also a coach, mentor and friend. Battle-tested developer with a big heart, dedicated and loyal to the values of the company.',
+      name: 'Devesh Jadon',
+      role: 'Staff Software Engineer · Reported to Tarun at Outgrow · 2018',
     },
     {
-      quote: 'Fifth quote. End on the highest-status name if you have one.',
-      name: 'Name Surname',
-      role: 'Title, Company',
+      quote:
+        'I found myself preferring to communicate directly with Tarun, which is rarely the case when working with an outsourced firm. Even though he was on a different continent, it felt like he was part of our team.',
+      name: 'Romeo Ju',
+      role: "Client · Sulvo Spur project · 2014",
     },
   ],
 
