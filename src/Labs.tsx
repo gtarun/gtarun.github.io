@@ -3,7 +3,7 @@ import HeroOriginal from './components/labs/HeroOriginal';
 import HeroCrystal from './components/labs/HeroCrystal';
 import HeroBento from './components/labs/HeroBento';
 import Nav from './components/Nav';
-import Projects from './components/Projects';
+import Highlights from './components/Highlights';
 import Testimonials from './components/Testimonials';
 import About from './components/About';
 import Experience from './components/Experience';
@@ -71,7 +71,7 @@ export default function Labs() {
         {variant === 'original' && <HeroOriginal />}
 
         <div className="hairline border-t border-line">
-          <Projects />
+          <Highlights />
           <Testimonials />
           <About />
           <Experience />

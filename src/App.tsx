@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Nav from './components/Nav';
 import HeroBento from './components/labs/HeroBento';
-import Projects from './components/Projects';
+import Highlights from './components/Highlights';
 import Testimonials from './components/Testimonials';
 import About from './components/About';
 import Experience from './components/Experience';
@@ -25,7 +25,7 @@ function Home() {
       <Nav />
       <main>
         <HeroBento />
-        <Projects />
+        <Highlights />
         <Testimonials />
         <About />
         <Experience />
