@@ -1,6 +1,6 @@
 import { lazy, Suspense, useEffect, useState } from 'react';
 import Nav from './components/Nav';
-import HeroBento from './components/labs/HeroBento';
+import HeroConstellationGate from './components/labs/HeroConstellationGate';
 import Highlights from './components/Highlights';
 import Testimonials from './components/Testimonials';
 import About from './components/About';
@@ -39,7 +39,7 @@ function Home() {
     <div className="min-h-screen bg-paper text-ink">
       <Nav />
       <main>
-        <HeroBento />
+        <HeroConstellationGate />
         <Highlights />
         <Testimonials />
         <About />
