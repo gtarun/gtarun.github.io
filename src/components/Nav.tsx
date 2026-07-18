@@ -1,4 +1,5 @@
 import { profile } from '../data/profile';
+import { PRESS } from '../lib/motion';
 
 const links = [
   { label: 'Resume', href: profile.resumeUrl, external: true },
@@ -27,7 +28,7 @@ export default function Nav() {
               href={l.href}
               target={l.external ? '_blank' : undefined}
               rel={l.external ? 'noreferrer' : undefined}
-              className="rounded-full px-3 py-1.5 text-sm text-ink/80 hover:bg-ink hover:text-paper transition-colors"
+              className={`rounded-full px-3 py-1.5 text-sm text-ink/80 hover:bg-ink hover:text-paper transition-colors ${PRESS}`}
             >
               {l.label}
             </a>

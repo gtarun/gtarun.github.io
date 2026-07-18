@@ -22,7 +22,7 @@ export const profile = {
     paragraphs: [
       "13+ years across web, mobile, and platform engineering — shipping for marketers, educators, and businesses worldwide. From a 30,000-student university ERP to a global growth-marketing platform used by Adobe, Nike, Salesforce, Uber, and Amazon.",
       "I work at the messy intersection of product, engineering, and team — turning ambitious visions into products customers love and that businesses can scale. Currently leading engineering at Masters' Union and Outgrow, while shipping side products in AI and conversational software.",
-      "When I'm not building, you'll find me trekking in the Himalayas \u{1F3D4}️, playing chess ♟️, or thinking about how to use AI as a foil — not a driver.",
+      "When I'm not building, you'll find me trekking in the Himalayas, playing chess, or thinking about how to use AI as a foil — not a driver.",
     ],
   },
 

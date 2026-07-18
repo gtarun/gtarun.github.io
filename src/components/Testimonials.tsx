@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { profile } from '../data/profile';
+import { EASE_OUT } from '../lib/motion';
 
 export default function Testimonials() {
   return (
@@ -19,7 +20,7 @@ export default function Testimonials() {
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-60px' }}
-              transition={{ duration: 0.5, ease: 'easeOut', delay: (i % 2) * 0.05 }}
+              transition={{ duration: 0.5, ease: EASE_OUT, delay: (i % 2) * 0.05 }}
               className={`rounded-2xl border border-line bg-cream/30 p-6 sm:p-7 ${
                 i === 4 ? 'md:col-span-2' : ''
               }`}

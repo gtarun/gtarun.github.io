@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import ShaderGradient from './ShaderGradient';
 import ProductStack from './ProductStack';
 import { profile } from '../data/profile';
+import { EASE_OUT, PRESS } from '../lib/motion';
 
 export default function Hero() {
   return (
@@ -19,7 +20,7 @@ export default function Hero() {
           <motion.div
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: 'easeOut' }}
+            transition={{ duration: 0.6, ease: EASE_OUT }}
             className="flex items-center gap-2 text-sm text-ink/70"
           >
             <span className="relative flex h-2 w-2">
@@ -32,7 +33,7 @@ export default function Hero() {
           <motion.h1
             initial={{ opacity: 0, y: 22 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.05 }}
+            transition={{ duration: 0.7, ease: EASE_OUT, delay: 0.05 }}
             className="mt-6 font-display text-[44px] leading-[1.02] tracking-tighter2 sm:text-[60px] md:text-[72px]"
           >
             Building, leading & scaling{' '}
@@ -43,7 +44,7 @@ export default function Hero() {
           <motion.p
             initial={{ opacity: 0, y: 22 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.15 }}
+            transition={{ duration: 0.7, ease: EASE_OUT, delay: 0.15 }}
             className="mt-6 max-w-[560px] text-base sm:text-lg leading-relaxed text-ink/75"
           >
             {profile.hero.sub}
@@ -52,21 +53,21 @@ export default function Hero() {
           <motion.div
             initial={{ opacity: 0, y: 22 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.25 }}
+            transition={{ duration: 0.7, ease: EASE_OUT, delay: 0.25 }}
             className="mt-8 flex flex-wrap items-center gap-3"
           >
             <a
               href={profile.resumeUrl}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-ink px-5 py-2.5 text-sm font-medium text-paper hover:bg-accent transition-colors"
+              className={`inline-flex items-center gap-2 rounded-full bg-ink px-5 py-2.5 text-sm font-medium text-paper hover:bg-accent transition-colors ${PRESS}`}
             >
               View resume
               <span aria-hidden>→</span>
             </a>
             <a
               href={`mailto:${profile.email}`}
-              className="inline-flex items-center gap-2 rounded-full border border-line bg-paper/70 px-5 py-2.5 text-sm font-medium text-ink hover:bg-ink hover:text-paper transition-colors"
+              className={`inline-flex items-center gap-2 rounded-full border border-line bg-paper/70 px-5 py-2.5 text-sm font-medium text-ink hover:bg-ink hover:text-paper transition-colors ${PRESS}`}
             >
               Get in touch
             </a>
@@ -76,7 +77,7 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0, scale: 0.94 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.9, ease: 'easeOut', delay: 0.3 }}
+          transition={{ duration: 0.9, ease: EASE_OUT, delay: 0.3 }}
           className="md:col-span-5 relative h-[380px] sm:h-[460px] md:h-[520px]"
         >
           <ProductStack />

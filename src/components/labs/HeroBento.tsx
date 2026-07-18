@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { profile } from '../../data/profile';
+import { EASE_OUT, PRESS } from '../../lib/motion';
 
 type Tile = {
   key: string;
@@ -78,7 +79,7 @@ function PortraitTile({ t, i }: { t: Tile; i: number }) {
     <motion.div
       initial={{ opacity: 0, y: 18 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: 0.4 + i * 0.06, ease: 'easeOut' }}
+      transition={{ duration: 0.6, delay: 0.4 + i * 0.06, ease: EASE_OUT }}
       className="group relative overflow-hidden rounded-2xl border border-black/5 shadow-[0_2px_30px_-12px_rgba(0,0,0,0.18)] hover:shadow-[0_30px_60px_-20px_rgba(0,0,0,0.35)] transition-shadow"
       style={{ background: t.bg, color: t.fg, gridArea: t.area }}
     >
@@ -124,8 +125,9 @@ function ProductTile({ t, i }: { t: Tile; i: number }) {
       rel="noreferrer"
       initial={{ opacity: 0, y: 18 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: 0.4 + i * 0.06, ease: 'easeOut' }}
+      transition={{ duration: 0.5, delay: 0.4 + i * 0.06, ease: EASE_OUT }}
       whileHover={{ y: -3, transition: { duration: 0.2 } }}
+      whileTap={{ scale: 0.97 }}
       className="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-black/5 p-5 sm:p-6 shadow-[0_2px_30px_-12px_rgba(0,0,0,0.18)] hover:shadow-[0_30px_60px_-20px_rgba(0,0,0,0.35)] transition-shadow"
       style={{
         background: t.bg,
@@ -208,13 +210,13 @@ export default function HeroBento() {
               href={profile.resumeUrl}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-ink px-5 py-2.5 text-sm font-medium text-paper hover:bg-accent transition-colors"
+              className={`inline-flex items-center gap-2 rounded-full bg-ink px-5 py-2.5 text-sm font-medium text-paper hover:bg-accent transition-colors ${PRESS}`}
             >
               View resume <span aria-hidden>→</span>
             </a>
             <a
               href={`mailto:${profile.email}`}
-              className="inline-flex items-center gap-2 rounded-full border border-line bg-paper px-5 py-2.5 text-sm font-medium text-ink hover:bg-ink hover:text-paper transition-colors"
+              className={`inline-flex items-center gap-2 rounded-full border border-line bg-paper px-5 py-2.5 text-sm font-medium text-ink hover:bg-ink hover:text-paper transition-colors ${PRESS}`}
             >
               Get in touch
             </a>

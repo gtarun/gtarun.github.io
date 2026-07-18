@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { profile } from '../data/profile';
+import { EASE_OUT, PRESS } from '../lib/motion';
 
 const ctas = [
   { label: 'Email', href: `mailto:${profile.email}`, sub: profile.email },
@@ -16,16 +17,16 @@ export default function Contact() {
           initial={{ opacity: 0, y: 12 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.5, ease: EASE_OUT }}
           className="text-xs uppercase tracking-[0.18em] text-muted"
         >
-          Let's build something meaningful 🚀
+          Let's build something meaningful
         </motion.p>
         <motion.h2
           initial={{ opacity: 0, y: 18 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.05 }}
+          transition={{ duration: 0.6, delay: 0.05, ease: EASE_OUT }}
           className="mt-3 mx-auto max-w-[860px] font-display text-[44px] sm:text-[68px] leading-[1.05] tracking-tighter2"
         >
           Got a 0→1 product or a team that needs to ship? <span className="serif-italic">Let's talk.</span>
@@ -38,7 +39,7 @@ export default function Contact() {
               href={c.href}
               target="_blank"
               rel="noreferrer"
-              className="group flex items-center justify-between rounded-2xl border border-line bg-cream/30 px-5 py-4 hover:bg-ink hover:text-paper transition-colors"
+              className={`group flex items-center justify-between rounded-2xl border border-line bg-cream/30 px-5 py-4 hover:bg-ink hover:text-paper transition-colors ${PRESS}`}
             >
               <div className="text-left">
                 <div className="text-sm font-medium">{c.label}</div>

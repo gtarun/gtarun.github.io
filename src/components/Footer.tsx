@@ -1,5 +1,7 @@
 import { profile } from '../data/profile';
 
+const linkClass = 'transition-colors hover:text-ink';
+
 export default function Footer() {
   return (
     <footer className="hairline border-t border-line">
@@ -8,16 +10,16 @@ export default function Footer() {
           © {new Date().getFullYear()} {profile.name}. All rights reserved.
         </div>
         <div className="flex flex-wrap gap-4">
-          <a href={profile.linkedin} target="_blank" rel="noreferrer" className="hover:text-ink">
+          <a href={profile.linkedin} target="_blank" rel="noreferrer" className={linkClass}>
             LinkedIn
           </a>
-          <a href={profile.github} target="_blank" rel="noreferrer" className="hover:text-ink">
+          <a href={profile.github} target="_blank" rel="noreferrer" className={linkClass}>
             GitHub
           </a>
-          <a href={profile.twitter} target="_blank" rel="noreferrer" className="hover:text-ink">
+          <a href={profile.twitter} target="_blank" rel="noreferrer" className={linkClass}>
             X / Twitter
           </a>
-          <a href={`mailto:${profile.email}`} className="hover:text-ink">
+          <a href={`mailto:${profile.email}`} className={linkClass}>
             {profile.email}
           </a>
         </div>

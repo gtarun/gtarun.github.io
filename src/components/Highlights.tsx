@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { EASE_OUT } from '../lib/motion';
 
 type HighlightTile = {
   key: string;
@@ -89,7 +90,8 @@ function Tile({ t, i }: { t: HighlightTile; i: number }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-80px' }}
       whileHover={{ y: -3, transition: { duration: 0.2 } }}
-      transition={{ duration: 0.5, delay: i * 0.05, ease: 'easeOut' }}
+      whileTap={t.href ? { scale: 0.97 } : undefined}
+      transition={{ duration: 0.5, delay: i * 0.05, ease: EASE_OUT }}
       className={`group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-black/5 p-6 sm:p-7 shadow-[0_2px_30px_-12px_rgba(0,0,0,0.18)] hover:shadow-[0_30px_60px_-20px_rgba(0,0,0,0.35)] transition-shadow ${t.span}`}
       style={{ background: t.bg, color: t.fg, minHeight: '220px' }}
     >
