@@ -158,6 +158,7 @@ function Constellation({
   const groupRef = useRef<THREE.Group>(null);
   const mouse = useThree((s) => s.mouse);
   const { camera } = useThree();
+  const didSnap = useRef(false);
 
   const nodes: Node[] = useMemo(
     () =>
@@ -185,7 +186,15 @@ function Constellation({
 
     if (cameraRef?.current) {
       const targetPos = new THREE.Vector3(...cameraRef.current.position);
-      camera.position.lerp(targetPos, 0.05);
+      if (!didSnap.current) {
+        // Land exactly on the first waypoint on the very first frame —
+        // lerping from the Canvas's arbitrary default position produced a
+        // multi-second "fly-in" from the wrong spot on every page load.
+        camera.position.copy(targetPos);
+        didSnap.current = true;
+      } else {
+        camera.position.lerp(targetPos, 0.05);
+      }
       camera.lookAt(...cameraRef.current.target);
     }
   });
@@ -228,10 +237,15 @@ export default function SkillConstellation({
   interactive?: boolean;
   activeKey?: string;
 }) {
+  // Start the real Canvas camera at the rig's actual initial position —
+  // otherwise it spawns at a hardcoded default and visibly flies to the
+  // first waypoint on every load instead of being there from frame one.
+  const initialPosition = cameraRef?.current?.position ?? [0, 0, 6];
+
   return (
     <div className="absolute inset-0">
       <Canvas
-        camera={{ position: [0, 0, 6], fov: 45 }}
+        camera={{ position: initialPosition, fov: 45 }}
         dpr={[1, 1.75]}
         gl={{ antialias: true, alpha: true }}
       >

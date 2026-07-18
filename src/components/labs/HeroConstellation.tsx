@@ -18,11 +18,16 @@ function buildWaypoints(): CameraWaypoint[] {
     target: s.position,
   }));
 
+  // The hero copy lives in a left-aligned text column — pan the whole rig
+  // left (camera + target move together) so the sphere renders shifted to
+  // the right of frame instead of centered on top of the text, and pull
+  // back slightly so it reads as a background element, not competing with
+  // the copy for attention.
   return [
-    { key: 'hero', position: [0, 0, 6], target: [0, 0, 0] },
-    { key: 'skills', position: [1.2, 0.4, 2.4], target: [0.4, 0.15, 0] },
+    { key: 'hero', position: [-4.9, 0, 7.8], target: [-4.9, 0, 0] },
+    { key: 'skills', position: [-3.9, 0.4, 2.8], target: [-4.9, 0.15, 0.2] },
     ...projectWaypoints,
-    { key: 'end', position: [0, 0.2, 5.2], target: [0, 0, 0] },
+    { key: 'end', position: [-4.7, 0.2, 6.8], target: [-4.7, 0, 0] },
   ];
 }
 
