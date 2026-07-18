@@ -45,7 +45,9 @@ export default function Labs() {
     <div className="min-h-screen bg-paper text-ink">
       <Nav />
 
-      <div className="sticky top-[64px] z-20 bg-paper/85 backdrop-blur-md hairline">
+      <div className="pt-[84px]" />
+
+      <div className="sticky top-[84px] z-20 bg-paper/85 backdrop-blur-md hairline">
         <div className="container-prose flex flex-col gap-3 py-3 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex flex-col">
             <span className="text-xs uppercase tracking-[0.18em] text-muted">
