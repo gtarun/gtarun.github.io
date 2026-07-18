@@ -10,12 +10,18 @@ const SEGMENTS = 2 + projectStations.length + 1; // hero, skills, N projects, en
 const TRACK_VH = SEGMENTS * 100;
 
 function buildWaypoints(): CameraWaypoint[] {
+  // `lookAt` always projects the target point to the exact center of the
+  // screen — so as long as target === station.position, the logo plaque
+  // is glued to screen-center no matter where the camera sits, regardless
+  // of any camera-only offset. Translating position AND target by the same
+  // left-shift keeps the original per-station framing (distance, angle,
+  // height) intact while panning the whole view so the station renders
+  // right-of-center, clear of the left-aligned text panel.
+  const PROJECT_PAN = 1.6;
   const projectWaypoints: CameraWaypoint[] = projectStations.map((s) => ({
     key: s.key,
-    // Park the camera between the origin and the station, looking at it —
-    // keeps every project framed roughly the same size on screen.
-    position: [s.position[0] * 0.55, s.position[1] * 0.55, s.position[2] * 0.55 + 1.4],
-    target: s.position,
+    position: [s.position[0] * 0.55 - PROJECT_PAN, s.position[1] * 0.55, s.position[2] * 0.55 + 1.4],
+    target: [s.position[0] - PROJECT_PAN, s.position[1], s.position[2]],
   }));
 
   // The hero copy lives in a left-aligned text column — pan the whole rig
