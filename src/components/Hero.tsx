@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { ArrowRight, EnvelopeSimple } from '@phosphor-icons/react';
 import ShaderGradient from './ShaderGradient';
 import ProductStack from './ProductStack';
 import { profile } from '../data/profile';
@@ -63,13 +64,13 @@ export default function Hero() {
               className={`inline-flex items-center gap-2 rounded-full bg-ink px-5 py-2.5 text-sm font-medium text-paper hover:bg-accent transition-colors ${PRESS}`}
             >
               View resume
-              <span aria-hidden>→</span>
+              <ArrowRight size={16} weight="bold" aria-hidden />
             </a>
             <a
               href={`mailto:${profile.email}`}
               className={`inline-flex items-center gap-2 rounded-full border border-line bg-paper/70 px-5 py-2.5 text-sm font-medium text-ink hover:bg-ink hover:text-paper transition-colors ${PRESS}`}
             >
-              Get in touch
+              <EnvelopeSimple size={16} weight="bold" aria-hidden /> Get in touch
             </a>
           </motion.div>
         </div>

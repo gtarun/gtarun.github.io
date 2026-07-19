@@ -1,11 +1,12 @@
+import { FileText, EnvelopeSimple, LinkedinLogo, WhatsappLogo } from '@phosphor-icons/react';
 import { profile } from '../data/profile';
 import { PRESS } from '../lib/motion';
 
 const links = [
-  { label: 'Resume', href: profile.resumeUrl, external: true },
-  { label: 'Email', href: `mailto:${profile.email}`, external: false },
-  { label: 'LinkedIn', href: profile.linkedin, external: true },
-  { label: 'WhatsApp', href: profile.whatsapp, external: true },
+  { label: 'Resume', href: profile.resumeUrl, external: true, Icon: FileText },
+  { label: 'Email', href: `mailto:${profile.email}`, external: false, Icon: EnvelopeSimple },
+  { label: 'LinkedIn', href: profile.linkedin, external: true, Icon: LinkedinLogo },
+  { label: 'WhatsApp', href: profile.whatsapp, external: true, Icon: WhatsappLogo },
 ];
 
 export default function Nav() {
@@ -28,9 +29,10 @@ export default function Nav() {
               href={l.href}
               target={l.external ? '_blank' : undefined}
               rel={l.external ? 'noreferrer' : undefined}
-              className={`rounded-full px-3 py-1.5 text-sm text-white/70 hover:bg-white hover:text-black transition-colors ${PRESS}`}
+              className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm text-white/70 hover:bg-white hover:text-black transition-colors ${PRESS}`}
             >
-              {l.label}
+              <l.Icon size={15} weight="bold" className="shrink-0" />
+              <span className="hidden sm:inline">{l.label}</span>
             </a>
           ))}
         </nav>

@@ -1,5 +1,6 @@
 import { Fragment, useMemo, useRef, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
+import { ArrowRight, ArrowUpRight, EnvelopeSimple } from '@phosphor-icons/react';
 import SkillConstellation from './SkillConstellation';
 import { profile } from '../../data/profile';
 import { projectStations } from '../../data/projectStations';
@@ -65,7 +66,7 @@ function ProjectPanel({ station }: { station: (typeof profile.projects)[number] 
         rel="noreferrer"
         className={`mt-5 inline-flex items-center gap-2 rounded-full border border-white/20 px-4 py-2 text-sm font-medium text-white hover:bg-white hover:text-black transition-colors ${PRESS}`}
       >
-        Visit {station.name} <span aria-hidden>↗</span>
+        Visit {station.name} <ArrowUpRight size={16} weight="bold" aria-hidden />
       </a>
     </motion.div>
   );
@@ -123,13 +124,13 @@ export default function HeroConstellation() {
                     rel="noreferrer"
                     className={`inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-medium text-black hover:bg-[#ff5722] hover:text-white transition-colors ${PRESS}`}
                   >
-                    View resume <span aria-hidden>→</span>
+                    View resume <ArrowRight size={16} weight="bold" aria-hidden />
                   </a>
                   <a
                     href={`mailto:${profile.email}`}
                     className={`inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-2.5 text-sm font-medium text-white hover:bg-white hover:text-black transition-colors ${PRESS}`}
                   >
-                    Get in touch
+                    <EnvelopeSimple size={16} weight="bold" aria-hidden /> Get in touch
                   </a>
                 </div>
               </motion.div>

@@ -2,6 +2,7 @@ import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { Html, RoundedBox } from '@react-three/drei';
 import { useRef, useState } from 'react';
 import * as THREE from 'three';
+import { ArrowUpRight } from '@phosphor-icons/react';
 import { profile } from '../data/profile';
 
 type Project = (typeof profile.projects)[number];
@@ -105,7 +106,7 @@ function ProductCard({
           </div>
           <div className="flex items-center justify-between text-[10px] opacity-70">
             <span>{project.role}</span>
-            <span>↗</span>
+            <ArrowUpRight size={13} weight="bold" aria-hidden />
           </div>
         </div>
       </Html>

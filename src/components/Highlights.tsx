@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { ArrowUpRight } from '@phosphor-icons/react';
 import { EASE_OUT } from '../lib/motion';
 
 type HighlightTile = {
@@ -45,7 +46,7 @@ const tiles: HighlightTile[] = [
     title: 'Assistant. Foil. Driver.',
     body:
       'Three modes for AI in creative work. Most people only use mode 1 (Assistant). Mode 2 — AI as Foil that argues against your idea so you sharpen it — is the most underused, and the most valuable for leaders.',
-    meta: 'Read the post →',
+    meta: 'Read the post',
     href: 'https://www.linkedin.com/in/tarungupta003/recent-activity/',
     bg: '#fef3e2',
     fg: '#0f0f10',
@@ -119,7 +120,7 @@ function Tile({ t, i }: { t: HighlightTile; i: number }) {
               className="grid h-9 w-9 place-items-center rounded-full transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"
               style={{ background: t.accent, color: t.bg }}
             >
-              <span aria-hidden className="text-sm">↗</span>
+              <ArrowUpRight size={16} weight="bold" aria-hidden />
             </div>
           )}
         </div>

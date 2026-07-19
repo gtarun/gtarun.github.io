@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { ArrowRight, ArrowUpRight, EnvelopeSimple } from '@phosphor-icons/react';
 import { profile } from '../../data/profile';
 import { EASE_OUT, PRESS } from '../../lib/motion';
 
@@ -155,7 +156,7 @@ function ProductTile({ t, i }: { t: Tile; i: number }) {
           className="grid h-8 w-8 place-items-center rounded-full transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"
           style={{ background: t.accent, color: t.bg }}
         >
-          <span aria-hidden className="text-sm">↗</span>
+          <ArrowUpRight size={16} weight="bold" aria-hidden />
         </div>
       </div>
     </motion.a>
@@ -212,13 +213,13 @@ export default function HeroBento() {
               rel="noreferrer"
               className={`inline-flex items-center gap-2 rounded-full bg-ink px-5 py-2.5 text-sm font-medium text-paper hover:bg-accent transition-colors ${PRESS}`}
             >
-              View resume <span aria-hidden>→</span>
+              View resume <ArrowRight size={16} weight="bold" aria-hidden />
             </a>
             <a
               href={`mailto:${profile.email}`}
               className={`inline-flex items-center gap-2 rounded-full border border-line bg-paper px-5 py-2.5 text-sm font-medium text-ink hover:bg-ink hover:text-paper transition-colors ${PRESS}`}
             >
-              Get in touch
+              <EnvelopeSimple size={16} weight="bold" aria-hidden /> Get in touch
             </a>
           </motion.div>
         </div>

@@ -1,12 +1,13 @@
 import { motion } from 'framer-motion';
+import { EnvelopeSimple, LinkedinLogo, WhatsappLogo, FileText, ArrowUpRight } from '@phosphor-icons/react';
 import { profile } from '../data/profile';
 import { EASE_OUT, PRESS } from '../lib/motion';
 
 const ctas = [
-  { label: 'Email', href: `mailto:${profile.email}`, sub: profile.email },
-  { label: 'LinkedIn', href: profile.linkedin, sub: '@tarungupta003' },
-  { label: 'WhatsApp', href: profile.whatsapp, sub: 'Quick chat' },
-  { label: 'Resume', href: profile.resumeUrl, sub: 'Google Doc' },
+  { label: 'Email', href: `mailto:${profile.email}`, sub: profile.email, Icon: EnvelopeSimple },
+  { label: 'LinkedIn', href: profile.linkedin, sub: '@tarungupta003', Icon: LinkedinLogo },
+  { label: 'WhatsApp', href: profile.whatsapp, sub: 'Quick chat', Icon: WhatsappLogo },
+  { label: 'Resume', href: profile.resumeUrl, sub: 'Google Doc', Icon: FileText },
 ];
 
 export default function Contact() {
@@ -41,13 +42,18 @@ export default function Contact() {
               rel="noreferrer"
               className={`group flex items-center justify-between rounded-2xl border border-line bg-cream/30 px-5 py-4 hover:bg-ink hover:text-paper transition-colors ${PRESS}`}
             >
-              <div className="text-left">
-                <div className="text-sm font-medium">{c.label}</div>
-                <div className="text-xs opacity-70">{c.sub}</div>
+              <div className="flex items-center gap-3 text-left">
+                <c.Icon size={18} weight="bold" className="shrink-0 opacity-70" />
+                <div>
+                  <div className="text-sm font-medium">{c.label}</div>
+                  <div className="text-xs opacity-70">{c.sub}</div>
+                </div>
               </div>
-              <span className="opacity-60 transition-transform group-hover:translate-x-1">
-                ↗
-              </span>
+              <ArrowUpRight
+                size={16}
+                weight="bold"
+                className="shrink-0 opacity-60 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"
+              />
             </a>
           ))}
         </div>
